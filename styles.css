@@ -1,0 +1,105 @@
+:root {
+  --bitcoin-orange: #f7931a;
+  --soft-orange: #ffe9d5;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #201e1c;
+  --warm-black2: #282623;
+  --grey: #bababa;
+  --off-white: #faf8f7;
+  --white: #fff;
+}
+/* estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+h3 {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: bold;
+}
+h4 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+/* Header */
+
+header {
+  background: linear-gradient(var(--warm-black), var(--bitcoin-orange));
+  color: var(--white);
+  height: 292px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header_logo {
+  display: flex;
+  justify-content: center;
+  padding: 42px 0px 0px 0px;
+  margin-left: 8px;
+  color: var(--bitcoin-orange);
+}
+.header_title {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--bitcoin-orange);
+}
+.header__title-container {
+  width: 90%;
+  max-width: 900px;
+  min-width: 288px;
+  text-align: center;
+}
+.header_description {
+  margin: 36px auto 0px;
+  width: 288px;
+}
+.header_paragraph {
+  width: 288px;
+  margin: 24px auto 0;
+}
+.header_button {
+  text-decoration: none;
+  color: var(--warm-black);
+  font-size: 14px;
+  font-weight: 700;
+}
+.header_button_container {
+  height: 48px;
+  width: 228px;
+  background-color: var(--white);
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border-radius: 4px;
+  position: absolute;
+  top: 54.5%;
+  left: calc(50% - 109px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Exchange section */
+
+.exchange_section {
+  text-align: center;
+}
+.exchange_section img {
+  margin: 59px auto 40px;
+}
+.exchange_section h3 {
+  color: var(--warm-black);
+  margin-bottom: 24px;
+}
+.exchange_section h4 {
+  color: var(--grey);
+}
+.exchange__text-container {
+  width: 90%;
+  margin: 0 auto;
+}
