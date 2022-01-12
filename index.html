@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css">
     <title>Batata Bit</title>
 </head>
@@ -35,38 +35,55 @@
                 <h4 class="exchange_subtitle">Traemos información en tiempo real de las tasas de cambio y las monedas más importantes del mundo</h4>
             </div>
             <div class="exchange__carousel">
-                <h3 class="exchange__carousel-title">Monedas</h3>
-                <div class="exchange__carousel-table">
-                    <ul>
-                        <li>
-                            <div class="exchange__carousel-item">Bitcoin</div>
-                            <div class="exchange__carousel-item">
-                                <span>$1.96</span>
-                                <img src="./assets/trending-down.svg" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="exchange__carousel-item">Ethereum</div>
-                            <div class="exchange__carousel-item">
-                                <span>$0.07</span>
-                                <img src="./assets/trending-up.svg" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="exchange__carousel-item">Ripple</div>
-                            <div class="exchange__carousel-item">
-                                <span>$2.15</span>
-                                <img src="./assets/trending-down.svg" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="exchange__carousel-item">Stellas</div>
-                            <div class="exchange__carousel-item">
-                                <span>$4.96</span>
-                                <img src="./assets/trending-down.svg" alt="">
-                            </div>
-                        </li>
-                    </ul>
+                <!-- <img src="./assets/arrow-right.svg" class="arrow-rigth" alt="">
+                <img src="./assets/arrow-left.svg" class="arrow-left" alt=""> -->
+                <div class="exchange__carousel-item">
+                    <h3 class="exchange__carousel-title">Monedas</h3>
+                    <table>
+                        <tr>
+                            <td class="table-left">Bitcoin</td>
+                            <td class="table-right">$1.96 <span class="trending-icon trending-down"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="table-left">Ethereum</td>
+                            <td class="table-right">$0.07 <span class="trending-icon trending-up"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="table-left">Ripple</td>
+                            <td class="table-right">$2.15 <span class="trending-icon trending-down"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="table-left">Stellas</td>
+                            <td class="table-right">$4.96 <span class="trending-icon trending-down"></span></td>
+                        </tr>
+                    </table>
+                    <div class="update-message">
+                        <b>Actualizado: </b>19 Julio 23:45
+                    </div>
+                </div>
+                <div class="exchange__carousel-item secondary">
+                    <h3 class="exchange__carousel-title">Comisiones</h3>
+                    <table>
+                        <tr>
+                            <td class="table-left">Bitrade</td>
+                            <td class="table-right">$12.96 <span class="trending-icon trending-down"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="table-left">Bitpreco</td>
+                            <td class="table-right">$13.07<span class="trending-icon trending-up"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="table-left">Novadax</td>
+                            <td class="table-right">$13.15<span class="trending-icon trending-down"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="table-left">Coinext</td>
+                            <td class="table-right">$14.96<span class="trending-icon trending-down"></span></td>
+                        </tr>
+                    </table>
+                    <div class="update-message">
+                        <b>Actualizado: </b>19 Julio 23:48
+                    </div>
                 </div>
             </div>
         </section>
