@@ -85,6 +85,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
 }
 
 /* Exchange section */
@@ -92,6 +93,7 @@ header {
 .exchange_section {
   text-align: center;
   background-color: var(--off-white);
+  position: relative;
 }
 .exchange_section img {
   margin: 59px auto 40px;
@@ -109,14 +111,17 @@ header {
 }
 .exchange__carousel {
   margin: 48px auto 0;
-  display: flex;
   width: 60%;
+  overflow: hidden;
 }
+.exchange__carousel-container {
+  display: flex;
+}
+
 .exchange__carousel-item {
   max-width: 320px;
   text-align: left;
-  width: 100%;
-  margin: 0 auto;
+  flex: 0 0 100%;
 }
 
 .exchange__carousel-title {
@@ -181,4 +186,21 @@ header {
   padding: 8px;
   margin: 16px auto 64px;
   border-radius: 8px;
+}
+.secondary-carousel h3 {
+  color: var(--secondary-blue);
+}
+.secondary-carousel .update-message {
+  background-color: var(--soft-blue);
+}
+
+.exchange_section .carousel-control {
+  position: absolute;
+  top: 68%;
+}
+.arrow-rigth {
+  right: 31px;
+}
+.arrow-left {
+  left: 31px;
 }
