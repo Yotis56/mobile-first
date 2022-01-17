@@ -204,3 +204,116 @@ header {
 .arrow-left {
   left: 31px;
 }
+/*Characteristics section*/
+
+.characteristics_section {
+  position: relative;
+  padding: 64px 0 47px;
+  background-color: var(--warm-black);
+  text-align: center;
+}
+.characteristics_section > img {
+  position: absolute;
+  top: -15px;
+  right: calc(50% - 20.5px);
+}
+.characteristics__title {
+  color: var(--white);
+}
+.characteristics__subtitle {
+  margin: 24px auto;
+}
+.characteristics__subtitle,
+.characteristics__card h4 {
+  color: #808080;
+}
+.characteristics__card {
+  background-color: var(--warm-black2);
+  margin: 8px 5%;
+  padding: 16px;
+  text-align: left;
+}
+.card-logo {
+  margin: 2px;
+}
+.card-title {
+  color: var(--white);
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+/* Hero section */
+.hero_section {
+  overflow: hidden;
+  text-align: center;
+}
+.hero-container {
+  background-image: url("./assets/bitcoinbaby.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 387px;
+}
+.hero-title {
+  color: var(--white);
+  position: absolute;
+  left: calc(50% - 80px);
+  margin-top: 64px;
+}
+
+/* planes section */
+.planes_section {
+  background-color: var(--off-white);
+  text-align: center;
+  overflow: hidden;
+  padding: 64px 0;
+}
+.planes__title {
+  color: var(--warm-black);
+  width: 90%;
+  margin: 0 auto;
+}
+.planes__subtitle {
+  color: #757575;
+  width: 90%;
+  margin: 24px auto 0;
+}
+.planes__slider {
+  display: flex;
+  margin-top: 50px;
+}
+
+.slider-card {
+  flex: 0 0 190px;
+  height: 247px;
+  padding: 24px 16px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border-radius: 8px;
+  margin: 0 4px;
+}
+.slider-card__price {
+  display: flex;
+  margin-top: 8px;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-size: 52px;
+  color: black;
+  font-weight: 700;
+}
+.slider-card__price span,
+.slider-card__description {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.52px;
+}
+.slider-card__price span {
+  color: #363636;
+  padding-top: 8px;
+}
+.slider-card__description {
+  color: #757575;
+  margin: 16px 0;
+}
