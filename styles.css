@@ -267,6 +267,7 @@ header {
 
 /* planes section */
 .planes_section {
+  position: relative;
   background-color: var(--off-white);
   text-align: center;
   overflow: hidden;
@@ -286,8 +287,25 @@ header {
   display: flex;
   margin-top: 50px;
   transform: translateX(-136px);
+  transition: all 0.4s ease-in-out;
 }
-
+.planes_section > span {
+  display: inline-block;
+  position: absolute;
+  top: 360px;
+  z-index: 10;
+  height: 12px;
+  width: 8px;
+  background-size: cover;
+}
+.slider__arrow-left {
+  background-image: url("./assets/arrow-left-gray.svg");
+  left: 32px;
+}
+.slider__arrow-right {
+  background-image: url("./assets/arrow-right-gray.svg");
+  right: 32px;
+}
 .slider-card {
   position: relative;
   flex: 0 0 190px;
@@ -403,6 +421,7 @@ header {
   color: #757575;
   text-align: justify;
   margin: 24px 0;
+  transition: all 0.4s ease;
 }
 .pregunta__buttons {
   margin-right: 19px;
@@ -420,7 +439,7 @@ header {
 }
 .arrow-down {
   background-image: url("./assets/arrow_down.svg");
-  margin-top: 12px;
+  margin-top: 8px;
 }
 .arrow-active {
   display: block;
