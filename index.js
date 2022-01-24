@@ -29,10 +29,12 @@ const planesRightBtn = document.querySelector(".slider__arrow-right")
 const planesLeftBtn = document.querySelector(".slider__arrow-left")
 const planesSlider = document.querySelector(".planes__slider")
 const cards = document.querySelectorAll(".slider-card")
-
-const initialTranslate = -136
+const initial = window.getComputedStyle(planesSlider).getPropertyValue('transform').match(/(-?[0-9\.]+)/g)[4]
+//tal vez está cogiendo el último valor puesto en el css. O sea, en la query. 
+const initialTranslate = parseInt(initial)
+console.log(initial)
 const cardWidth = 194
-
+//asdf
 function getPreviousCard() {
   let previousCard
   cards.forEach((card, index) => {
@@ -64,9 +66,10 @@ planesLeftBtn.addEventListener("click", () => {
     planesSlider.style.transform = `translateX(${initialTranslate}px)`
     planesRightBtn.style.display = "block"
   } else if (previousCard === 1) {
+    console.log(initialTranslate)
+
     planesLeftBtn.style.display = "none"
-    planesSlider.style.transform = `translateX(${initialTranslate + cardWidth
-      }px)`
+    planesSlider.style.transform = `translateX(${initialTranslate + cardWidth}px)`
   }
   cards[activeCard].classList.toggle("selected")
   cards[previousCard].classList.toggle("selected")
