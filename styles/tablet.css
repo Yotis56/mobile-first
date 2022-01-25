@@ -1,0 +1,103 @@
+h3 {
+  font-size: 40px;
+  line-height: 42px;
+}
+h4 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.carousel-control {
+  display: none;
+}
+.exchange__carousel {
+  max-width: 448px;
+}
+.exchange__carousel-container {
+  display: flex;
+  justify-content: space-between;
+}
+.exchange__carousel table {
+  width: auto;
+}
+.exchange__carousel-item {
+  max-width: 218px;
+}
+.update-message {
+  width: fit-content;
+  text-align: left;
+  margin-left: 0;
+}
+.characteristics__cards-container {
+  display: flex;
+  margin: 0 64px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.characteristics__card {
+  flex: 0 0 345px;
+  margin: 8px 0;
+}
+.hero_section {
+  height: 299px;
+}
+.hero-container {
+  background-image: url("../assets/bitcoinbaby-2.jpg");
+  background-position: center;
+  height: 100%;
+}
+.hero-title {
+  margin-top: 129px;
+  font-size: 40px;
+  left: calc(50% - 133px);
+}
+.planes__title {
+  font-size: 40px;
+  line-height: 42px;
+}
+.planes__subtitle {
+  font-size: 20px;
+  line-height: 24px;
+}
+.planes_section > span {
+  display: none;
+}
+.planes__slider {
+  transform: translateX(0px);
+  width: 85%;
+  margin: 64px auto 0;
+  justify-content: space-between;
+}
+.slider-card {
+  flex-basis: 223px;
+}
+.slider-card:not(.selected)::before {
+  width: 0;
+  height: 0;
+}
+.slider-card:not(.selected) {
+  opacity: 0.5;
+}
+.slider-card:not(.selected) a {
+  border-color: var(--grey);
+}
+.slider-card__title {
+  font-size: 14px;
+  font-weight: 500;
+}
+.slider-card__button h4 {
+  font-size: 14px;
+}
+footer {
+  height: 271px;
+}
+.footer__media-container a {
+  font-size: 20px;
+  line-height: 24px;
+}
+.footer__logo-container img {
+  width: 105px;
+}
+.footer__logo-container h5 {
+  font-size: 18px;
+}
